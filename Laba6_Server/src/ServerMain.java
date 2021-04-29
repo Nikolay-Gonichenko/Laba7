@@ -29,7 +29,7 @@ public class ServerMain {
         }
 
         String jdbcURL = "jdbc:postgresql://localhost:7887/studs";
-        DataBaseWorker worker = new DataBaseWorker(jdbcURL, "s311790", "gps097");
+        DataBaseWorker worker = new DataBaseWorker(jdbcURL, "Your Nickname", "Your Password");
         worker.connectToDataBase();
         MyCollection collection = new MyCollection();
         worker.fillCollection(collection);
